@@ -1,70 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
- 
-</head>
-<body class="bg-black text-white">
+  </head>
+  <body class="bg-black text-white">
     <!-- Navbar Section -->
     <nav class="flex items-center justify-between px-6 py-4">
-        <h1 class="text-[32px] font-bold">LOGO</h1>
-        <!-- Desktop Navigation -->
-        <ul class="hidden lg:flex space-x-10 items-center">
-            <li class="hover:text-gray-300 cursor-pointer">Home</li>
-            <li class="hover:text-gray-300 cursor-pointer">About Me</li>
-            <li class="hover:text-gray-300 cursor-pointer">Projects</li>
-            <li class="hover:text-gray-300 cursor-pointer">Testimonials</li>
-            <button class="bg-[#E6AA32] text-black px-4 py-2 rounded-3xl hover:bg-[#d49b2d]">Download CV</button>
-        </ul>
-        
-        <!-- Hamburger Icon (visible on mobile) -->
-        <button class="lg:hidden" >
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-    </nav>
-    <hr class="border-gray-600">
-
-    <!-- Mobile Navigation Menu (hidden by default) -->
-    <ul id="mobile-menu" class="lg:hidden hidden absolute top-16 left-0 right-0 bg-black text-white flex flex-col space-y-4 px-6 py-4">
+      <h1 class="text-[32px] font-bold">LOGO</h1>
+      <!-- Desktop Navigation -->
+      <ul class="hidden lg:flex space-x-10 items-center">
         <li class="hover:text-gray-300 cursor-pointer">Home</li>
         <li class="hover:text-gray-300 cursor-pointer">About Me</li>
         <li class="hover:text-gray-300 cursor-pointer">Projects</li>
         <li class="hover:text-gray-300 cursor-pointer">Testimonials</li>
-        <button class="bg-[#E6AA32] text-black px-4 py-2 rounded-3xl hover:bg-[#d49b2d]">Download CV</button>
+        <button
+          class="bg-[#E6AA32] text-black px-4 py-2 rounded-3xl hover:bg-[#d49b2d]"
+        >
+          Download CV
+        </button>
+      </ul>
+
+      <!-- Hamburger Icon (visible on mobile) -->
+      <button class="lg:hidden">
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+    <hr class="border-gray-600" />
+
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <ul
+      id="mobile-menu"
+      class="lg:hidden hidden absolute top-16 left-0 right-0 bg-black text-white flex flex-col space-y-4 px-6 py-4"
+    >
+      <li class="hover:text-gray-300 cursor-pointer">Home</li>
+      <li class="hover:text-gray-300 cursor-pointer">About Me</li>
+      <li class="hover:text-gray-300 cursor-pointer">Projects</li>
+      <li class="hover:text-gray-300 cursor-pointer">Testimonials</li>
+      <button
+        class="bg-[#E6AA32] text-black px-4 py-2 rounded-3xl hover:bg-[#d49b2d]"
+      >
+        Download CV
+      </button>
     </ul>
 
     <!-- Main Section -->
     <main>
-        <!-- Banner Section -->
-        <section class="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-16">
-            <!-- Left Content -->
-            <div class="lg:w-1/2 text-left lg:text-left">
-                <p class="text-lg text-[#797C86] font-medium mb-2">Web Developer</p>
-                <h1 class="text-4xl lg:text-6xl font-bold mb-4">
-                    HI! This is <br> 
-                    <span class="text-[#E6AA32]">Kazi Ahammad Ullah</span>
-                </h1>
-                <p class="text-[#797C86] mb-6">
-                    As a web designer with four years of experience, I specialize in creating visually appealing and user-friendly websites. My expertise includes responsive design, UI/UX principles, and collaborating with clients to bring their visions to life.
-                </p>
-                <div class="flex justify-center lg:justify-start space-x-4">
-                    <button class="bg-[#E6AA32] text-black px-6 py-3 rounded-3xl font-medium hover:bg-[#d49b2d]">Let’s Connect</button>
-                    <button class="bg-transparent   px-6 py-3  font-medium ">
-                        View Portfolios →
-                    </button>
-                </div>
-            </div>
-            <!-- Right Image -->
-            <div class="lg:w-1/2 mt-8 lg:mt-0 relative">
-                <div class="bg-gradient-to-b from-[#17171A] via-[#17171A] to-transparent rounded-tl-[147px] w-full h-full absolute z-0"></div>
-                <img src="./images/bg.png" alt="" class="relative z-10 rounded-tl-[147px]">
-            </div>
-        </section>
+      <!-- Banner Section -->
+      <section
+        class="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-16"
+      >
+        <!-- Left Content -->
+        <div class="lg:w-1/2 text-left lg:text-left">
+          <p class="text-lg text-[#797C86] font-medium mb-2">Web Developer</p>
+          <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+            HI! This is <br />
+            <span class="text-[#E6AA32]">Kazi Ahammad Ullah</span>
+          </h1>
+          <p class="text-[#797C86] mb-6">
+            As a web designer with four years of experience, I specialize in
+            creating visually appealing and user-friendly websites. My expertise
+            includes responsive design, UI/UX principles, and collaborating with
+            clients to bring their visions to life.
+          </p>
+          <div class="flex justify-center lg:justify-start space-x-4">
+            <button
+              class="bg-[#E6AA32] text-black px-6 py-3 rounded-3xl font-medium hover:bg-[#d49b2d]"
+            >
+              Let’s Connect
+            </button>
+            <button class="bg-transparent px-6 py-3 font-medium">
+              View Portfolios →
+            </button>
+          </div>
+        </div>
+        <!-- Right Image -->
+        <div class="lg:w-1/2 mt-8 lg:mt-0 relative">
+          <div
+            class="bg-gradient-to-b from-[#17171A] via-[#17171A] to-transparent rounded-tl-[147px] w-full h-full absolute z-0"
+          ></div>
+          <img
+            src="./images/bg.png"
+            alt=""
+            class="relative z-10 rounded-tl-[147px]"
+          />
+        </div>
+      </section>
+
+      <!-- Specialties Section -->
+      <section class="px-6 py-16 text-center">
+        <p class="text-lg font-medium mb-2 text-[#E6AA32]">Specialties</p>
+        <h1 class="text-4xl font-bold mb-4">My Specialties</h1>
+        <p class="text-gray-300 mb-8">
+          As a web designer with four years of experience, I specialize in
+          creating visually appealing and user-friendly websites. My expertise
+          includes responsive design.
+        </p>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-[#17171A] rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                209.39deg,
+                rgb(14, 14, 16) 19.421%,
+                rgba(23, 23, 26, 0.23) 93.354%
+              );
+            "
+          >
+            <img
+              src="./images/s1.png"
+              alt="Front-End Development"
+              class="w-20 h-20 mb-4"
+            />
+            <h1 class="text-xl font-semibold mb-2">Front-End Development</h1>
+            <p class="text-gray-300 text-center">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-[#17171A] rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                209.39deg,
+                rgb(14, 14, 16) 19.421%,
+                rgba(23, 23, 26, 0.23) 93.354%
+              );
+            "
+          >
+            <img
+              src="./images/s2.png"
+              alt="Back-End Development"
+              class="w-20 h-20 mb-4"
+            />
+            <h1 class="text-xl font-semibold mb-2">Back-End Development</h1>
+            <p class="text-gray-300 text-center">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-[#17171A] rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                209.39deg,
+                rgb(14, 14, 16) 19.421%,
+                rgba(23, 23, 26, 0.23) 93.354%
+              );
+            "
+          >
+            <img
+              src="./images/s3.png"
+              alt="Full-Stack Development"
+              class="w-20 h-20 mb-4"
+            />
+            <h1 class="text-xl font-semibold mb-2">Full-Stack Development</h1>
+            <p class="text-gray-300 text-center">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-[#17171A] rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                209.39deg,
+                rgb(14, 14, 16) 19.421%,
+                rgba(23, 23, 26, 0.23) 93.354%
+              );
+            "
+          >
+            <img
+              src="./images/s4.png"
+              alt="Web Application Security"
+              class="w-20 h-20 mb-4"
+            />
+            <h1 class="text-xl font-semibold mb-2">Web Application Security</h1>
+            <p class="text-gray-300 text-center">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="bg-[#17171A] rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                209.39deg,
+                rgb(14, 14, 16) 19.421%,
+                rgba(23, 23, 26, 0.23) 93.354%
+              );
+            "
+          >
+            <img
+              src="./images/s5.png"
+              alt="E-commerce Development"
+              class="w-20 h-20 mb-4"
+            />
+            <h1 class="text-xl font-semibold mb-2">E-commerce Development</h1>
+            <p class="text-gray-300 text-center">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="bg-[#17171A] rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                209.39deg,
+                rgb(14, 14, 16) 19.421%,
+                rgba(23, 23, 26, 0.23) 93.354%
+              );
+            "
+          >
+            <img
+              src="./images/s6.png"
+              alt="Cloud-Based Development"
+              class="w-20 h-20 mb-4"
+            />
+            <h1 class="text-xl font-semibold mb-2">Cloud-Based Development</h1>
+            <p class="text-gray-300 text-center">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="bg-[#17171A] rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                209.39deg,
+                rgb(14, 14, 16) 19.421%,
+                rgba(23, 23, 26, 0.23) 93.354%
+              );
+            "
+          >
+            <img
+              src="./images/s7.png"
+              alt="Progressive Web Apps"
+              class="w-20 h-20 mb-4"
+            />
+            <h1 class="text-xl font-semibold mb-2">Progressive Web Apps</h1>
+            <p class="text-gray-300 text-center">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="bg-[#17171A] rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                209.39deg,
+                rgb(14, 14, 16) 19.421%,
+                rgba(23, 23, 26, 0.23) 93.354%
+              );
+            "
+          >
+            <img
+              src="./images/s8.png"
+              alt="AI-Powered Development"
+              class="w-20 h-20 mb-4"
+            />
+            <h1 class="text-xl font-semibold mb-2">AI-Powered Development</h1>
+            <p class="text-gray-300 text-center">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
